@@ -21,8 +21,20 @@
  *     }
  */
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Answer01 {
     public static void main(String[] args) {
-
+        List<Box<String>> boxList = Arrays.asList(new Box<>("Robot"), new Box<>("Simple"));
+        boxList.stream()
+                .map(b -> b.get())
+                .forEach(s -> System.out.println(s));
     }
+}
+
+class Box<T> {
+    private T ob;
+    public Box(T o) { ob = o; }
+    public T get() { return this.ob; }
 }
