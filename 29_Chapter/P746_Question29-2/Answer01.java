@@ -10,8 +10,30 @@
  *     맵핑 방법      ToyPriceInfo 인스턴스 ⇨ String 인스턴스(모델명)
  */
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Answer01 {
     public static void main(String[] args) {
+        List<ToyPriceInfo> toyPriceInfoList = new ArrayList<>();
+        toyPriceInfoList.add(new ToyPriceInfo("GUN_LR_45", 200));
+        toyPriceInfoList.add(new ToyPriceInfo("TEDDY_BEAR_S_014", 350));
+        toyPriceInfoList.add(new ToyPriceInfo("CAR_TRANSFORM_VER_7719", 550));
 
+        toyPriceInfoList.stream()
+                .filter(i -> i.getName().length() > 10)
+                .map(i -> i.getName())
+                .forEach(s -> System.out.println(s));
     }
+}
+
+@AllArgsConstructor
+@Getter
+class ToyPriceInfo {
+    private String name;
+    private int price;
 }
