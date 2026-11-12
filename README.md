@@ -4,6 +4,7 @@
 예제 코드와 연습문제 풀이를 정리한 저장소입니다.
 
 ## 📚 학습 자료
+<img src="assets/images/programming-course.png" height="280px">
 
 - 교재: 열혈 Java 프로그래밍 (윤성우 저)
 
