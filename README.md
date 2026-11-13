@@ -56,7 +56,7 @@
 - [x] Chapter 27 - 람다 표현식 (p663-690)
 - [x] Chapter 28 - 메소드 참조와 Optional (p691-728)
 - [x] Chapter 29 - 스트림 1 (p729-752)
-- [ ] Chapter 30 - 스트림 2 (p753-780)
+- [x] Chapter 30 - 스트림 2 (p753-780)
 - [ ] Chapter 31 - 시각과 날짜의 처리 (p781-806)
 - [ ] Chapter 32 - I/O 스트림 (p807-844)
 - [ ] Chapter 33 - NIO 그리고 NIO.2 (p845-872)
