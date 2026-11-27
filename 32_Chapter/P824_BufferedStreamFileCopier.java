@@ -32,8 +32,15 @@ public class P824_BufferedStreamFileCopier {
                     break;
                 out.write(data);
             }
+
+            out.flush(); // 버퍼에 남은 내용을 파일로 내보낸 뒤에 cat 해야 한다.
+
+            new ProcessBuilder("cat", dst)
+                    .inheritIO()
+                    .start()
+                    .waitFor();
         }
-        catch (IOException e) {
+        catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
     }
