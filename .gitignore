@@ -11,3 +11,6 @@ JavaProgrammingStudy.iml
 .obsidian/
 *.iml
 lib/
+data.dat
+src.*
+dst.*
