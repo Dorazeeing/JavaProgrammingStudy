@@ -6,11 +6,21 @@ public class P824_BufferedStreamFileCopier {
         String src, dst;
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("src: ");
-        src = sc.nextLine();
+        if(args.length != 0) {
+            System.out.println("src: " + args[0]);
+            System.out.println("dst: " + args[1]);
 
-        System.out.print("dst: ");
-        dst = sc.nextLine();
+            src = args[0];
+            dst = args[1];
+        }
+
+        else {
+            System.out.print("src: ");
+            src = sc.nextLine();
+
+            System.out.print("dst: ");
+            dst = sc.nextLine();
+        }
 
         try(BufferedInputStream in = new BufferedInputStream(new FileInputStream(src));
             BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(dst))) {
