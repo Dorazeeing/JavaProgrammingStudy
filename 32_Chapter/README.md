@@ -5,6 +5,8 @@
 - 버퍼 사용 스트림: BufferedInputStream(), BufferedOutputStream()
 - 데이터(자료형)에 따른 스트림: DataInputStream(), DataOutputStream()
 
+- 인스턴스 저장: ObjectInputStream, ObjectOutputStream
+
 ## 문자 스트림
 - 문자 스트림 상위 클래스: Reader, Writer
 - 종류: FileReader(), FileWriter()
