@@ -8,6 +8,7 @@
 ## 문자 스트림
 - 문자 스트림 상위 클래스: Reader, Writer
 - 종류: FileReader(), FileWriter()
+- 버퍼 사용 스트림: BufferedReader(), BufferedWriter()
 
 
 ## Questions & Answers
